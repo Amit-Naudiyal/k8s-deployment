@@ -1,0 +1,25 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUN5RENDQWJDZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRFNE1URXdNekEyTlRnd01sb1hEVEk0TVRBek1UQTJOVGd3TWxvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBS3dqCmFOUjl4TE1yMWNkbmVZUlR2WllQN2IwcHlUamV5N0ZnVyt1ODBSQUlnSm9nb3dHbE5ocGZOZTZ3MHNjWnRoZ2YKYXJBeENNcnhtRDZ1ZXZNdElyUkRpelBqODM2L01meFVpbU15MnF3aXF2UU1JUks3OEx6YVBsTGNhYnNtUmFOdwpjZ3Ivbm03SkZqdmxISzVUSS9Rd2oxWTQ4RDJBQkNhWVV3VEdnN21EYlkxZVczclk4Vzl5WG5JQXdEbHVNNEdICmh6TzRCTGxqZXM4WHpIRVpsZjlKeWRNd0FSOGhXeWFDS1B4cFozZ0VXQUNiQTFta3lUYU5Kb201bWtNUzZnSFUKVzZaTXo5R01kdHFLVllydVZ3V0ovd0RoRUVmSVZIcFJXVE90NWZRYkR6VFRQcGhrUlZ6Zm9RK3ZGTzVpK0oxcAovb0I3N3IxMGtCMmZTa1dpcXFFQ0F3RUFBYU1qTUNFd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0RRWUpLb1pJaHZjTkFRRUxCUUFEZ2dFQkFCQ1o2dXVVQnIrZXh6MlZOeTB6SUozeGdJTWYKa095dXROUUJod1A2Q2lkcksyZzJRODFBb3hNTHBTemU3b25WR09zSy9TSXBxK0dWVzFIWW1KcHRNRmk3bzlITQpkVmlycHVRdGdnaVBNYnRHRVloTUtudDBRZXRjQkV4cFhZVzFhNHVzVWNYMExwSnc4RmxQcm9EVUM1YjBhKytqCjV2S2themQzM1ozUkh1YjdDQUxjOHFPWTZJNU9XMU5hSm5lSGhXYUQ4bExmejY5bDhoNlhCZ1M4dFAwYXQxWXMKN0t3dmtPdW9CZUdoKzVDc1dYcERLTWRoUTlOUmFsdDVpK2djWDNUM2V4NldmcnkwWWhncmpaS2xnMkxkYlQ0SAp2bjVvWFA3Q1B3RE1VQ0MrTWpqa0syb1Btai9VMk5NUjhleTFBUS9IMzlaUGxDSnlPRlBLa2JoQm1aWT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
+    server: https://70E00CDE463FA264B77FEF9674AF363B.sk1.us-east-1.eks.amazonaws.com
+  name: arn:aws:eks:us-east-1:728135289732:cluster/platform-ver2
+contexts:
+- context:
+    cluster: arn:aws:eks:us-east-1:728135289732:cluster/platform-ver2
+    user: arn:aws:eks:us-east-1:728135289732:cluster/platform-ver2
+  name: arn:aws:eks:us-east-1:728135289732:cluster/platform-ver2
+current-context: arn:aws:eks:us-east-1:728135289732:cluster/platform-ver2
+kind: Config
+preferences: {}
+users:
+- name: arn:aws:eks:us-east-1:728135289732:cluster/platform-ver2
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1alpha1
+      args:
+      - token
+      - -i
+      - platform-vers2
+      command: aws-iam-authenticator
+      env: null

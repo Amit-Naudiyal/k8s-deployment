@@ -21,5 +21,7 @@ users:
       - token
       - -i
       - platform-vers2
+      - -r
+      - arn:aws:iam::728135289732:role/service-role/codebuild-k8s-deployment-cdeploy-service-role
       command: aws-iam-authenticator
       env: null
